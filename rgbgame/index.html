@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB GAME</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>RGB GAME</h1>
+        <h1 id="text_introduce"></h1>
+        <h2 id="result"></h2>
+    </header>
+
+    <div class="container">
+        <div class="guess" id="pos_1" onclick="verify(1)"></div>
+        <div class="guess" id="pos_2" onclick="verify(2)"></div>
+        <div class="guess" id="pos_3" onclick="verify(3)"></div> <br>
+        <div class="guess" id="pos_4" onclick="verify(4)"></div>
+        <div class="guess" id="pos_5" onclick="verify(5)"></div>
+        <div class="guess" id="pos_6" onclick="verify(6)"></div>
+    </div>
+
+    <div class="win" onclick="init()">
+        <h1 class="reduce">Parabéns, você ganhou!</h1>
+        <img id="img_trof" src="trof.png" width="350px">
+        <h1 class="reduce">Clique aqui para jogar de novo</h1>
+    </div>
+
+    <div class="lost" onclick="init()">
+        <h1 class="reduce" id="porque"></h1>
+        <img id="img_lost" src="lost.png" width="150px">  
+        <h1 class="reduce">Clique aqui para jogar de novo</h1>
+    </div>
+    
+    <span>10s</span>
+    <script src="script.js"></script>
+</body>
+</html>
