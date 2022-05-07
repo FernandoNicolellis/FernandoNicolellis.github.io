@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB GAME</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" href="icon.png">
 </head>
 <body>
     <header>
@@ -16,23 +16,23 @@
     </header>
 
     <div class="container">
-        <div class="guess" id="pos_1" onclick="verify(1)"></div>
-        <div class="guess" id="pos_2" onclick="verify(2)"></div>
-        <div class="guess" id="pos_3" onclick="verify(3)"></div> <br>
-        <div class="guess" id="pos_4" onclick="verify(4)"></div>
-        <div class="guess" id="pos_5" onclick="verify(5)"></div>
-        <div class="guess" id="pos_6" onclick="verify(6)"></div>
+        <div class="guess" id="pos_1"></div>
+        <div class="guess" id="pos_2"></div>
+        <div class="guess" id="pos_3"></div> 
+        <div class="guess" id="pos_4"></div>
+        <div class="guess" id="pos_5"></div>
+        <div class="guess" id="pos_6"></div>
     </div>
 
-    <div class="win" onclick="init()">
+    <div class="win">
         <h1 class="reduce">Parabéns, você ganhou!</h1>
-        <img id="img_trof" src="trof.png" width="350px">
+        <img id="img_trof" src="trof.png">
         <h1 class="reduce">Clique aqui para jogar de novo</h1>
     </div>
 
-    <div class="lost" onclick="init()">
+    <div class="lost">
         <h1 class="reduce" id="porque"></h1>
-        <img id="img_lost" src="lost.png" width="150px">  
+        <img id="img_lost" src="lost.png">  
         <h1 class="reduce">Clique aqui para jogar de novo</h1>
     </div>
     
