@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhedor de filme</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            border: 1px solid black;
+            width: 70%;
+            height: 70%;
+
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 2vw;
+        }
+        input {
+            width: 40%;
+            height: 5%;
+            margin-bottom: 1%;
+            font-size: 1.5vw;
+        }
+        button {
+            margin-bottom: 2%;
+            font-size: 1.5vw;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 4vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="quest">
+                <h2 id="added_film">Filme: 0</h2> <input type="text" id="film" placeholder=""><br> 
+                <button id="film_btn">Adicionar</button> 
+    
+                <h2 id="added_food">Comida: 0</h2> <input type="text" id="food" placeholder=""><br>
+                <button id="food_btn">Adicionar</button> 
+    
+                <h2 id="added_add">Adicional: 0</h2> <input type="text" id="add" placeholder=""><br>
+                <button id="add_btn">Adicionar</button>
+                
+                <br>
+                <button id="res" style="font-size: 2.5vw;"> Resultado </button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        var film = []
+        document.querySelector("#film_btn").addEventListener("click", () => {
+            if (document.querySelector("#film").value != '') film.push(document.querySelector("#film").value)
+            document.querySelector("#added_film").innerHTML = "Filme: " + film.length
+        })
+        var food = []
+        document.querySelector("#food_btn").addEventListener("click", () => {
+            if (document.querySelector("#food").value != '') food.push(document.querySelector("#food").value)
+            document.querySelector("#added_food").innerHTML = "Comida: " +food.length
+        })
+        var add = []
+        document.querySelector("#add_btn").addEventListener("click", () => {
+            if (document.querySelector("#add").value != '') add.push(document.querySelector("#add").value)
+            document.querySelector("#added_add").innerHTML = "Adicional: " + add.length
+        })
+
+        
+    </script>
+
+    <script>
+        document.querySelector("#res").addEventListener("click", () => {
+            document.querySelector("#quest").innerHTML = ''
+
+            var random_film = film[Math.floor(Math.random() * film.length)] 
+            var random_food = food[Math.floor(Math.random() * food.length)]
+            var random_add = add[Math.floor(Math.random() * add.length)]
+
+            document.querySelector(".box").innerHTML = " <h1> <br> O filme será " + random_film + " para comer com " + random_food +  ". <br> Terá um adicional: " + random_add + "</h1> <button onclick='window.location.reload()'> Sortear de novo </button>"
+        })
+    </script>
+</body>
+</html>
