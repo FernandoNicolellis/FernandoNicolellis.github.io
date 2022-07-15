@@ -54,6 +54,7 @@ const surprise = function (day) {
             break;
 
         case '28/07':
+            body.innerHTML = '<div class="surprise-container red"><p> Se tudo correr bem AKKAK estarei chegando ai com altoss PRESENTINHOSSS paa minha gatinha mais lindona dessi munduu ihhiihi <3. Presentinhos da europa, da itália hehehihi <p></div>'
             break;
 
         case '29/07':
