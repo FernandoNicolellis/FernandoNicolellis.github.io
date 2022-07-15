@@ -101,6 +101,9 @@ p {
 .green {
     background: linear-gradient(to bottom right, rgb(120, 223, 94), rgb(0, 153, 51));
 }
+.yellow {
+    background: linear-gradient(to bottom right, yellow, rgb(117, 117, 0));
+}
 
 input {
     width: 200px;

@@ -14,34 +14,43 @@ const surprise = function (day) {
             break;
 
         case '18/07':
-            body.innerHTML = '<div class="surprise-container green"><p> Você é a pessoa certa pra mim, e você é muitooo suficiente aninha </p></div>'
+            body.innerHTML = '<div class="surprise-container red"><p> Você é a pessoa certa pra mim, e você é muitooo suficiente aninha </p></div>'
             break;
 
         case '19/07':
+            body.innerHTML = '<div class="surprise-container green"><p> Você fica linda sem maquiagem </p></div>'
             break;
 
         case '20/07':
+            body.innerHTML = '<div class="surprise-container blue"><p> CARALHOOO VOCÊ É MUITOOO ESTILOSAAAA SOCORRO CHORO, amo muito socorro, linda pfta rainha deusa </p></div>'
             break;
 
         case '21/07':
+            body.innerHTML = '<div class="surprise-container yellow"><p> Eita (hoje é dia 14) o S3X0 foi mto bom hj em krl, que abilidade, ai ai, quero mais</p></div>'
             break;
 
         case '22/07':
+            body.innerHTML = '<div class="surprise-container red"><p> Eu ti amu mtu mtu mtu pá sempii minha esposinhaa mtu mtu queru casar e ter filinhos cum voxeee </p></div>'
             break;
 
         case '23/07':
+            body.innerHTML = '<div class="surprise-container blue"><p> Minha cantora rainha canta demais talentosa demais, choro quando ouço você cantar pq népucivi </p></div>'
             break;
 
         case '24/07':
+            body.innerHTML = '<div class="surprise-container green"><p> Espero que esteja tuduuu bem ai no dia 24/07 KADKAKS, ispelu que esteja fazendo altas coisinhasssss, se divertindo mtuuu, upando no val, escrevendo suas histórias geniais e tudu maix </p></div>'
             break;
 
         case '25/07':
+            body.innerHTML = '<div class="surprise-container blue"><p> Atua demais também, LITERALMENTE não consigo diferenciiar. Uma vez ce tava tendo uma aula, fazendo online aqui da minha casa, e uma hora você tava atuando e eu achei que você tava literalmente falando com o prof </div>'
             break;
 
         case '26/07':
+            body.innerHTML = '<div class="surprise-container blue"><p> Você é gatinha mais lindona de todo esse universuuuuu, naum tem ninguém mais ninita que você (só minha gatinha por sinal HAM) </p></div>'
             break;
 
         case '27/07':
+            body.innerHTML = '<div class="surprise-container green"><p> Morrr além daquii, tem que lembrar que também tem us meus papeizinhos, as balinhas, e espero que a esse ponto você JA TENHA COMIDO us pirulitu que u fefe ti deu hammmmm </p></div>'
             break;
 
         case '28/07':
@@ -66,14 +75,15 @@ const surprise = function (day) {
             break;
 
         case '04/08':
+            body.innerHTML = '<div class="surprise-container green"><p> VOCÊ VAI ME VER LOGUINHOOOOOOO AAAAAAAAAAAAAAAAAAA, daqui a pouquinhuu </p></div>'
             break;
 
-        case '05/08':
-            break;
+        
 
         case 1: 
-            body.innerHTML = '<div class="surprise-container green"><p> dasdas     </p></div>'
-
+            body.innerHTML = '<div class="surprise-container green"><p> Você é suficiente pá mim e pra todo mundo e eu te amo muituu, pá sempi </p></div>'
+        case 2:
+            body.innerHTML = '<div class="surprise-container green"><p> Fala comiguu podi falar, eu to aqui sempre pra você, pra ajudar você meu amorzinho, pometu. Ti amu mtu. </p></div>'
         
     }
 }
